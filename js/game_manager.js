@@ -10,6 +10,8 @@ function GameManager(size, InputManager, Actuator, ScoreManager) {
   this.inputManager.on("restart", this.restart.bind(this));
 
   this.setup();
+  
+  this.bot			= new Bot(this);
 }
 
 // Restart the game
